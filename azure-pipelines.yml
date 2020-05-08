@@ -31,7 +31,7 @@ steps:
     mvn package
   displayName: 'Build with Maven'
   
-  steps:
+steps:
 - task: ShellScript@2
   inputs:
     scriptPath: 'build.sh'
