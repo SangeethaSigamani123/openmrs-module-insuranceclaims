@@ -11,6 +11,7 @@ pool:
   
 steps:
 - task: Maven@3
+  displayName: 'Build with Maven'
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
@@ -23,7 +24,7 @@ steps:
 - script: |
     echo Starting the build
     mvn package
-displayName: 'Build with Maven'
+
 
   
 
