@@ -20,10 +20,10 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
- - script: |
+- script: |
     echo Starting the build
     mvn package
-  displayName: 'Build with Maven'
+displayName: 'Build with Maven'
 
   
 
